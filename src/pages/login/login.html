@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="../../static/styles/init.css">
+    <link rel="stylesheet" href="../../styles/login.css">
+</head>
+
+<body>
+    <div class="dialog">
+        <div class="title">
+            <h4>使用 Smartisan ID 登录官网</h4>
+        </div>
+        <div class="content">
+            <form action="" class="login_form" name="form" autocomplete="off">
+                <ul class="common_form">
+                    <li class="username">
+                        <div class="input">
+                            <span class="icon">
+                                <i>手机号/邮箱</i>
+                            </span>
+                            <label for="username" class="placeholder">手机号/邮箱</label>
+                            <input type="text" name="username" autofocus="autofocus">
+                            <span class="warning">请输入手机号/邮箱</span>
+                            <span class="warning">手机号/邮箱格式错误</span>
+                            <span class="warning">手机号/邮箱不存在</span>
+                        </div>
+                    </li>
+                    <li class="password">
+                        <div class="input">
+                            <span class="icon">
+                                <i>密码</i>
+                            </span>
+                            <label for="password" class="placeholder">密码</label>
+                            <input type="password" name="password" style="outline: medium">
+                            <span class="warning">请输入密码</span>
+                            <span class="warning">密码错误</span>
+                        </div>
+                    </li>
+                    <li class="remember">
+                        <div class="auto">
+                            <span class="checkbox"></span>
+                            我已阅读并同意
+                        </div>
+                        <a href="" class="forgotpassword">&nbsp;忘记密码？</a>
+                        <a href="../register/register.html" class="registercloud">注册 Smartisan ID&nbsp;|</a>
+                    </li>
+                </ul>
+                <div class="btn_wrapper">
+                    <div class="btn disabled">
+                        <a role="button">登录</a>
+                    </div>
+                </div>
+                <div class="info_wrapper">
+                    <ul>
+                        <li>
+                            <ul class="login_three">
+                                <li class="text">其他账号登录：</li>
+                                <li class="wechat"></li>
+                                <li class="weibo"></li>
+                                <li class="qq"></li>
+                                <li class="alipay"></li>
+                            </ul>
+                        </li>
+                        <li><a href="">国际手机号登录 </a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="copyright">
+        <div class="clearfix">
+            <h2>Copyright © 2019 smartisan.com 版权所有</h2>
+            <ul class="privacy">
+                <li><a href="https://www.smartisan.com/support/#/agreement"></a>法律声明</li>
+                <li><a href="https://www.smartisan.com/support/#/privacy"></a>隐私条款</li>
+            </ul>
+        </div>
+        <h4></h4>
+    </div> -->
+</body>
+<script src="../../static/scripts/require.js" data-main="login.js"></script>
+
+</html>

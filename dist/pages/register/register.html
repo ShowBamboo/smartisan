@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="../../static/styles/init.css">
+    <link rel="stylesheet" href="../../styles/register.css">
+</head>
+
+<body>
+    <div class="dialog">
+        <div class="title">
+            <h4 class="dialogTitle">注册 Smartisan ID</h4>
+        </div>
+        <div class="content">
+            <form action="" class="reg_form" name="form" autocomplete="off">
+                <ul class="common_form">
+                    <li class="country_region">
+                        <div class="input">
+                            <span class="icon"><i>国家和地区</i></span>
+                            <span class="cr">国家和地区</span>
+                            <span class="country">中国</span>
+                        </div>
+                    </li>
+                    <li class="username">
+                        <div class="input">
+                            <span class="icon"> <i>手机号</i> </span>
+                            <span class="ccc">+86</span>
+                            <label for="mobile" class="placeholder">手机号</label>
+                            <input type="text" name="mobile" class="indent" autofocus="autofocus">
+                            <span class="warning">请输入手机号</span>
+                            <span class="warning">手机号格式错误</span>
+                            <span class="warning">该手机已经注册</span>
+                        </div>
+                    </li>
+                    <li class="verification">
+                        <div class="input">
+                            <span class="icon"><i> </i></span>
+                            <label for="" class="placeholder">短信验证码</label>
+                            <input type="text">
+                        </div>
+                        <div class="btn">
+                            <a role="button">获取验证码</a>
+                        </div>
+                    </li>
+                    <li class="password">
+                        <div class="input">
+                            <span class="icon"><i></i></span>
+                            <label for="password" class="placeholder">同时含有数字和字母，长度8-16位</label>
+                            <input type="password" name="password">
+                            <span class="warning">请输入密码</span>
+                            <span class="warning">密码格式错误</span>
+                        </div>
+                    </li>
+                    <li class="password_repeat">
+                        <div class="input">
+                            <span class="icon"><i> </i></span>
+                            <label for="repassword" class="placeholder">重复密码</label>
+                            <input type="password" name="repassword">
+                            <span class="warning">请重复输入密码</span>
+                            <span class="warning">两次密码输入不一致</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn_wrapper">
+                    <p class="agreement">
+                        <span class="checkbox"> </span>
+                        我已阅读并同意遵守
+                        <a href="https://www.smartisan.com/support/#/agreement">法律声明</a>
+                        和<a href="https://www.smartisan.com/support/#/privacy">隐私条款</a>
+                    </p>
+                    <div class="btn disabled">
+                        <a role="button">注册</a>
+                    </div>
+                    <p class="tologin">
+                        <a href="../login/login.html">如果您已拥有 Smartisan ID，则可在此<span>登录</span></a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../../static/scripts/require.js" data-main="register.js"></script>
+
+</html>

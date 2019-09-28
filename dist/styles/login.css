@@ -1,0 +1,331 @@
+@charset "UTF-8";
+body {
+  color: #666;
+  font-family: 华文黑体, "Microsoft YaHei", 微软雅黑, STHei, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background: url(../static/images/login_bg.png) repeat;
+  background-size: 100px;
+}
+
+.dialog {
+  width: 450px;
+  height: 552px;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 9px 30px -6px rgba(0, 0, 0, 0.2), 0 18px 20px -10px rgba(0, 0, 0, 0.04), 0 18px 20px -10px rgba(0, 0, 0, 0.04), 0 10px 20px -10px rgba(0, 0, 0, 0.04);
+  background: linear-gradient(#fff, #f5f5f5);
+}
+
+.dialog .title {
+  position: relative;
+  background-image: url(../static/images/smartisan.png);
+  background-size: 160px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 92px;
+  margin: 23px 0 50px;
+  padding: 75px 0 0;
+}
+
+.dialog .title h4 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1em;
+  height: auto;
+  color: #333;
+  font-weight: 400;
+}
+
+.dialog .content {
+  height: auto;
+  opacity: 1;
+  padding: 0 40px 22px;
+}
+
+.dialog .content .common_form li {
+  clear: both;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.dialog .content .remember {
+  margin: 15px 5px 25px;
+  height: 12px;
+}
+
+.dialog .content .input {
+  opacity: 0.618;
+  background: #fff;
+  box-shadow: 0 3px 5px -4px rgba(0, 0, 0, 0.4) inset, -1px 0 3px -2px rgba(0, 0, 0, 0.1) inset;
+  border: #ccc solid 1px;
+  border-radius: 6px;
+  font-size: 18px;
+  height: 46px;
+  line-height: 46px;
+  position: relative;
+}
+
+.dialog .content .input .icon {
+  border-radius: 6px 0 0 6px;
+  border-right: solid 1px #ccc;
+  box-shadow: 1px 0 3px -1px rgba(0, 0, 0, 0.1);
+  float: left;
+  height: 46px;
+  width: 46px;
+  overflow: hidden;
+}
+
+.dialog .content .input .icon i {
+  background: url(../static/images/dialog-input-icons.png) no-repeat;
+  background-position: -1px 0;
+  cursor: pointer;
+  display: block;
+  height: 46px;
+  text-indent: -9999em;
+  width: 46px;
+}
+
+.dialog .content .input .placeholder {
+  color: #bebebe;
+  float: left;
+  font-size: 16px;
+  position: absolute;
+  left: 62px;
+  top: 0;
+}
+
+.dialog .content .input input {
+  width: 293px;
+  height: 20px;
+  padding: 12px 12px 12px 15px;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  color: #333;
+  font-size: 16px;
+  position: relative;
+  z-index: 10;
+}
+
+.dialog .content .input .warning {
+  background: #e93a27;
+  border-radius: 4px;
+  color: #fff;
+  display: none;
+  font-size: 12px;
+  font-weight: 400;
+  height: 26px;
+  line-height: 26px;
+  margin: 10px 0 0;
+  padding: 0 10px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  z-index: 10;
+}
+
+.dialog .content .password .icon i {
+  background-position: -49px 0;
+}
+
+.dialog .content .auto {
+  color: #999;
+  float: left;
+  font-size: 12px;
+  cursor: pointer;
+  padding-left: 22px;
+}
+
+.dialog .content .auto .checkbox {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: url(../static/images/checkbox.png) 0 2px no-repeat;
+  background-position: 0 -18px;
+  float: left;
+  height: 20px;
+  width: 20px;
+}
+
+.dialog .content .auto .checked {
+  background-position: 0 0px;
+}
+
+.dialog .content .forgotpassword {
+  float: right;
+  margin-right: 3px;
+  font-size: 12px;
+  width: 50px;
+  white-space: nowrap;
+  color: #5079d9;
+  cursor: pointer;
+}
+
+.dialog .content .registercloud {
+  margin-left: 0;
+  float: right;
+  font-size: 12px;
+  color: #5079d9;
+  cursor: pointer;
+}
+
+.dialog .content .btn_wrapper {
+  margin: 30px 0 0;
+}
+
+.dialog .content .btn_wrapper .btn {
+  background: linear-gradient(#6383c6, #4262af);
+  border-radius: 6px;
+  clear: both;
+  height: 46px;
+  line-height: 46px;
+  margin: 0 0 12px;
+  padding: 1px;
+  user-select: none;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.496094) 0 1px 0;
+  cursor: pointer;
+}
+
+.dialog .content .btn_wrapper .btn a {
+  border: none;
+  border-radius: 6px;
+  display: block;
+  font-size: 18px;
+  color: #fff;
+}
+
+.dialog .content .btn_wrapper .disabled {
+  cursor: not-allowed;
+  opacity: .4;
+  pointer-events: none;
+}
+
+.dialog .content .info_wrapper {
+  margin: 30px 0 0;
+  padding-top: 23px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+  border-top: 1px solid #d9d9d9;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+}
+
+.dialog .content .info_wrapper li {
+  color: #999;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.dialog .content .info_wrapper li a {
+  color: #999;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.dialog .content .info_wrapper ul li {
+  float: right;
+}
+
+.dialog .content .info_wrapper ul li:first-child {
+  float: left;
+}
+
+.dialog .content .info_wrapper .login_three .text {
+  background-image: none;
+  margin-left: 0;
+  width: auto;
+  font-size: 100%;
+  cursor: default;
+  color: #999;
+}
+
+.dialog .content .info_wrapper .login_three li {
+  width: 20px;
+  height: 17px;
+  margin-left: 15px;
+  float: left;
+  cursor: pointer;
+  background-size: 110px 17px;
+  background-repeat: no-repeat;
+}
+
+.dialog .content .info_wrapper .login_three .wechat {
+  background-image: url(../static/images/icons.png);
+  background-position: 1px 0;
+  margin-left: 10px;
+}
+
+.dialog .content .info_wrapper .login_three .wechatH {
+  background-image: url(../static/images/icons-hover.png);
+}
+
+.dialog .content .info_wrapper .login_three .weibo {
+  background-image: url(../static/images/icons.png);
+  background-position: -30px 0;
+}
+
+.dialog .content .info_wrapper .login_three .qq {
+  background-image: url(../static/images/icons.png);
+  background-position: -62px 0;
+}
+
+.dialog .content .info_wrapper .login_three .alipay {
+  background-image: url(../static/images/icons.png);
+  background-position: -92px 0;
+}
+
+.dialog .content .info_wrapper .login_three .active {
+  background-image: url(../static/images/icons-hover.png);
+}
+
+.copyright {
+  width: 100%;
+  color: #434d55;
+  font-size: 12px;
+  padding: 0 0 60px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.copyright div {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.copyright h2 {
+  float: left;
+  height: 15px;
+  line-height: 15px;
+  color: #757575;
+  font-size: 100%;
+}
+
+.copyright .privacy {
+  float: left;
+  margin: 0 0 0 9px;
+}
+
+.copyright .privacy li {
+  float: left;
+  font-weight: 300;
+  line-height: 12px;
+  padding: 1px 10px 0;
+  border-left: 1px solid #ccc;
+}
+
+.copyright .privacy li a {
+  color: #5079d9;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .3s ease;
+}

@@ -1,0 +1,13 @@
+//定义一个混合函数 
+@mixin opacity($val) {
+	opacity : $val/100;
+	filter: alpha(opacity=$val);
+}
+
+@mixin clearfix() {
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}

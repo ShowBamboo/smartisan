@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="../../static/styles/init.css">
+    <link rel="stylesheet" href="../../styles/shoppingcart.css">
+</head>
+<div class="wrapper">
+    <!-- 头部 -->
+    <div class="top">
+        <h1 class="logo">
+            <a href="#" title="锤子商城"></a>
+        </h1>
+        <div class="container">
+            <ul class="top_nav">
+                <li> <a href="" title=" 在线商城 " class="active" style="font-weight: 700">在线商城</a> </li>
+                <li> <a href="" title=" 坚果 Pro 2S ">坚果 Pro 2S</a> </li>
+                <li> <a href="" title=" 坚果 R1 ">坚果 R1</a> </li>
+                <li> <a href="" title=" 坚果 TNT 工作站 ">坚果 TNT 工作站</a> </li>
+                <li> <a href="" title="  Smartisan OS  ">Smartisan OS</a> </li>
+                <li> <a href="" title="  欢喜云  ">欢喜云</a> </li>
+                <li> <a href="" title=" 应用 ">应用</a> </li>
+                <li> <a href="" title="  论坛  ">论坛</a> </li>
+                <li> <a href="" title=" 荣誉与奖项 ">荣誉与奖项</a> </li>
+            </ul>
+        </div>
+        <ul class="top_aside">
+            <li class="top_user">
+                <a href="../login/login.html"></a>
+                <div class="nav_user_wrapper">
+                    <div class="nav_user_list">
+                        <div class="userwrapper">
+                            <span></span>
+                        </div>
+                        <div class="user">17811111</div>
+                        <ul class="list">
+                            <li><a href=""><span class="a"></span>我的订单</a></li>
+                            <!-- <li><a href=""><span class="b"></span>售后服务</a></li> -->
+                            <li><a href=""><span class="c"></span>我的优惠</a></li>
+                            <li><a href=""><span class="d"></span>账户资料</a></li>
+                            <li><a href=""><span class="e"></span>收货地址</a></li>
+                            <li class="logout"><a><span class="f"></span>退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!-- <li class="top_cart">
+                <a href=""></a>
+                <div class="cart_wrapper">
+                    <div class="cart_list">
+                        <div class="empty">
+                            <h3>购物车为空</h3>
+                            <p>您还没有选购任何商品，现在前往商城选购吧！</p>
+                        </div>
+                    </div>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <!-- 主体内容 -->
+    <div class="page_cart">
+        <div class="gray_box">
+            <div class="title">
+                <h2>购物清单</h2>
+            </div>
+            <div class="box_inner">
+                <div>
+                    <div class="cart_table_title">
+                        <span class="name">商品信息</span>
+                        <span class="operation">操作</span>
+                        <span class="subtotal">小计</span>
+                        <span class="num">数量</span>
+                        <span class="price">单价</span>
+                    </div>
+                    <div class="cart_table">
+                        <div class="item_list">
+                            <!--  <div class="cart_group">
+                                <div>
+                                    <div class="cart_items">
+                                        <div class="checkbox_container">
+                                            <span class="m-blue-checkbox-new"></span>
+                                        </div>
+                                        <div class="item-wrapper">
+                                            <div class="items-thumb">
+                                                <img src="https://resource.smartisan.com/resource/6e96ccea3bd56bdd2243eb20330cec30.jpg?x-oss-process=image/resize,w_80"
+                                                    alt="">
+                                            </div>
+                                            <div class="name">
+                                                <div class="name-table">
+                                                    <a href="">坚果砖式蓝牙小音箱</a>
+                                                </div>
+                                            </div>
+                                            <div class="operation">
+                                                <a class="items-delete-btn"></a>
+                                            </div>
+                                            <div>
+                                                <div class="subtotal">
+                                                    <p class="discount">
+                                                        <i>¥</i>
+                                                        <span>297.00</span>
+                                                    </p>
+                                                </div>
+                                                <div class="item-cols-num">
+                                                    <div class="quantity">
+                                                        <span class="down"></span>
+                                                        <span class="num">1</span>
+                                                        <span class="up"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <i>¥</i>
+                                                    <span>149.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- <div class="cart_group">
+                                <div>
+                                    <div class="cart_items">
+                                        <div class="checkbox_container">
+                                            <span class="m-blue-checkbox-new"></span>
+                                        </div>
+                                        <div class="item-wrapper">
+                                            <div class="items-thumb">
+                                                <img src="https://resource.smartisan.com/resource/6e96ccea3bd56bdd2243eb20330cec30.jpg?x-oss-process=image/resize,w_80"
+                                                    alt="">
+                                            </div>
+                                            <div class="name">
+                                                <div class="name-table">
+                                                    <a href="">坚果砖式蓝牙小音箱</a>
+                                                </div>
+                                            </div>
+                                            <div class="operation">
+                                                <a class="items-delete-btn"></a>
+                                            </div>
+                                            <div>
+                                                <div class="subtotal">
+                                                    <p class="discount">
+                                                        <i>¥</i>
+                                                        <span>297.00</span>
+                                                    </p>
+                                                </div>
+                                                <div class="item-cols-num">
+                                                    <div class="quantity">
+                                                        <span class="down"></span>
+                                                        <span class="num">1</span>
+                                                        <span class="up"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <i>¥</i>
+                                                    <span>149.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_bottom">
+                <div class="cart-bar-operation">
+
+                </div>
+                <div class="shipping">
+                    <div class="shipping-box">
+                        <div class="shipping-num">
+                            <h4>已选择<i>0</i>件商品</h4>
+                        </div>
+                        <div class="shipping-price">
+                            <h4>应付总额：<span>￥0</span></h4>
+                        </div>
+                    </div>
+                    <span class="jieguo">
+                        <a>现在结算</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="container">
+            <div class="siteinfo">
+                <ul class="nav_footer">
+                    <li>
+                        <h3>订单服务</h3>
+                        <ul>
+                            <li><a href="//www.smartisan.com/support/#/instruction">购买指南</a></li>
+                            <li><a href="//www.smartisan.com/support/#/delivery">送货政策</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>服务支持</h3>
+                        <ul>
+                            <li><a href="//www.smartisan.com/service/#/">自助服务</a></li>
+                            <li><a href="//www.smartisan.com/support/#/self-service">使用帮助</a></li>
+                            <li><a href="//www.smartisan.com/support/#/servicelist">维修门店</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>媒体中心</h3>
+                        <ul>
+                            <li><a href="//www.smartisan.com/pr/news-center">新闻动态</a></li>
+                            <li><a href="//www.smartisan.com/pr/videos">官方视频</a></li>
+                            <li><a href="//www.smartisan.com/pr/pictures">图片资源</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>关注我们</h3>
+                        <ul>
+                            <li><a href="https://weibo.com/wenyiyouth">新浪微博</a></li>
+                            <li class="weixin">
+                                <a>官方微信</a>
+                                <div class="mask"></div>
+                                <div class="qrcode">
+                                    <div class="close_btn"></div>
+                                    <h4>官方微信</h4>
+                                    <h6>打开微信，点击右上角的“+”，选择“扫一扫”功能，用摄像头对准下方二维码即可。</h6>
+                                    <div class="qrcode_bg"> </div>
+                                </div>
+                            </li>
+                            <li><a href="//www.smartisan.com/support/#/awards">荣誉奖项</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="service">
+                    <li class="tel">400 - 626 - 5666</li>
+                    <li class="time">周一到周日 9:00 - 18:00</li>
+                    <li class="desc">(仅收市话费)</li>
+                    <li class="online">
+                        <a href="//www.smartisan.com/support/#/self-service">
+                            <span>在线帮助</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 版权声明 -->
+            <div class="copyright">
+                <h4>Copyright © 2019 smartisan.com 版权所有</h4>
+                <ul class="privacy">
+                    <li><a href="//www.smartisan.com/support/#/agreement">法律声明</a></li>
+                    <li><a href="//www.smartisan.com/support/#/privacy">隐私条款</a></li>
+                </ul>
+                <h6>
+                    <a href="http://www.miibeian.gov.cn/">
+                        <span>京 ICP 备 18020659 号 - 2 </span>
+                    </a>
+                </h6>
+            </div>
+        </div>
+    </div>
+    <!-- 遮罩层 -->
+    <div class="paymask"></div>
+    <div class="paycode">
+        <div class="close"></div>
+        <h4>快点付款给我哦</h4>
+        <h6>打开支付宝，选择“扫一扫”功能，用摄像头对准下方二维码即可。</h6>
+        <div class="paycode_bg"> </div>
+    </div>
+
+</div>
+
+<body>
+
+</body>
+<script src="../../static/scripts/require.js" data-main="shoppingcart.js"></script>
+
+</html>
