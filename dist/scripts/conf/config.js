@@ -1,6 +1,7 @@
 //做配置（配置每一个模块的加载路径）
 requirejs({
-    baseUrl: "https://showbamboo.github.io/smartisan/dist/",
+    baseUrl: "http://localhost:8000/",
+    // https://showbamboo.github.io/smartisan/dist/
     paths: {
         "jquery": "static/scripts/jquery-3.3.1.min",
         "swiper": "static/scripts/swiper",
